@@ -1,5 +1,5 @@
 # Shark
 
-Graphql proxy, easy to merge your schema and resolver multiple graphql server.
+Graphql proxy, easy to merge your schema multiple graphql server with no drama.
 
 ![shark](assets/shark.jpeg)

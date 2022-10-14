@@ -8,6 +8,10 @@ export class Shark {
     this.server = new Server();
   }
 
+  async use(middleware: any) {
+    await this.server.use(middleware);
+  }
+
   async listen(port: number = parseInt(Deno.env.get("PORT")) || 8000) {
     const { schema, rootValue } = await shark(this.endpoints);
     this.server.post(
